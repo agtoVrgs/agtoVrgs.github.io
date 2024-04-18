@@ -1,0 +1,23 @@
+/* Add your styling rules here */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+#about-me, #projects, #contact {
+    margin: 2em;
+}
+
+h1 {
+    color: #555;
+}
+
+h2 {
+    color: #666;
+}
