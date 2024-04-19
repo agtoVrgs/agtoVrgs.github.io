@@ -40,3 +40,30 @@ nav ul li a:hover {
 }
 
 /* ... (any additional styles) ... */
+
+/* Basic Layout Structure */
+header, nav, footer {
+    padding: 1em 0;
+}
+
+nav {
+    /* Navigation bar layout */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for main content sections */
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Adjust number of columns as needed */
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Example section within main */
+.section {
+    background: #1c1c1c; /* Darker background for content sections */
+    padding: 20px;
+    border-radius: 5px;
+}
