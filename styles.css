@@ -1,23 +1,42 @@
-/* Add your styling rules here */
-body {
-    font-family: Arial, sans-serif;
-}
+/* ... (existing styles) ... */
 
-header, footer {
+/* Navigation Menu Styles */
+nav ul {
+    list-style: none;
     background-color: #333;
-    color: white;
     text-align: center;
-    padding: 1em;
+    padding: 0;
 }
 
-#about-me, #projects, #contact {
-    margin: 2em;
+nav ul li {
+    display: inline;
+    margin-right: 10px;
 }
 
-h1 {
-    color: #555;
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    display: inline-block;
 }
 
-h2 {
-    color: #666;
+nav ul li a:hover {
+    background-color: #555;
 }
+
+/* Image Gallery Styles */
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.image-gallery img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+/* ... (any additional styles) ... */

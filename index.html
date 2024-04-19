@@ -1,30 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <!-- ... (existing head content) ... -->
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-    </header>
-    <section id="about-me">
-        <h2>About Me</h2>
-        <p>Hello, I'm [Your Name] and I'm a [Your Profession]. Welcome to my portfolio website.</p>
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#candle-machine">Candle Machine</a></li> <!-- New tab -->
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- ... (existing sections like About Me, Projects, etc.) ... -->
+
+    <!-- Candle Machine Section -->
+    <section id="candle-machine">
+        <h2>Candle Machine Project</h2>
+        <p>I designed and built a machine which can process a 20 kg batch of wax, producing 6 big candles each with dimensions of 10 cm in diameter and 49.5 cm in height. The key features of the machine include:</p>
+        <ul>
+            <li>Sturdy structure to withstand the forces generated during candle extraction.</li>
+            <li>A power assembly made with simple parts, offering low complexity and cost.</li>
+            <li>An efficient heat exchanger to solidify the candles.</li>
+            <li>An innovative process that consolidates the wax and candlewick in one step.</li>
+        </ul>
+        <p>These features lead to a decrease in building costs and reduction of manufacturing times.</p>
+        
+        <!-- Image Gallery -->
+        <div class="image-gallery">
+            <img src="images/IMG_20210310_202911.jpg" alt="Candle Machine Front View">
+            <img src="images/IMG_20210306_195958.jpg" alt="Candle Machine Side View">
+            <img src="images/IMG_20210308_190255.jpg" alt="Candle Machine Gear Closeup">
+            <img src="images/IMG_20210306_142845.jpg" alt="Candle Machine Bottom View">
+            <!-- Add more images as needed -->
+        </div>
     </section>
-    <section id="projects">
-        <h2>Projects</h2>
-        <!-- Add project details here -->
-    </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <!-- Add contact form or details here -->
-    </section>
-    <footer>
-        <p>Copyright &copy; [Year] by [Your Name]. All rights reserved.</p>
-    </footer>
+
+    <!-- ... (rest of your content) ... -->
+
+    <!-- Link to your JavaScript file -->
     <script src="scripts.js"></script>
 </body>
 </html>
