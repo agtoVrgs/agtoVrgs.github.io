@@ -1,52 +1,89 @@
-<head>
-    <!-- ... other head elements ... -->
-    <link rel="stylesheet" href="styles.css">
-</head>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- ... (existing head content) ... -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agto Vrgs Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation Menu -->
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about-me">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#candle-machine">Candle Machine</a></li> <!-- New tab -->
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
 
-    <!-- ... (existing sections like About Me, Projects, etc.) ... -->
-
-    <!-- Candle Machine Section -->
-    <section id="candle-machine">
-        <h2>Candle Machine Project</h2>
-        <p>I designed and built a machine which can process a 20 kg batch of wax, producing 6 big candles each with dimensions of 10 cm in diameter and 49.5 cm in height. The key features of the machine include:</p>
-        <ul>
-            <li>Sturdy structure to withstand the forces generated during candle extraction.</li>
-            <li>A power assembly made with simple parts, offering low complexity and cost.</li>
-            <li>An efficient heat exchanger to solidify the candles.</li>
-            <li>An innovative process that consolidates the wax and candlewick in one step.</li>
-        </ul>
-        <p>These features lead to a decrease in building costs and reduction of manufacturing times.</p>
-        
-        <!-- Image Gallery -->
-        <div class="image-gallery">
-            <img src="images/IMG_20210310_202911.jpg" alt="Candle Machine Front View">
-            <img src="images/IMG_20210306_195958.jpg" alt="Candle Machine Side View">
-            <img src="images/IMG_20210308_190255.jpg" alt="Candle Machine Gear Closeup">
-            <img src="images/IMG_20210306_142845.jpg" alt="Candle Machine Bottom View">
-            <!-- Add more images as needed -->
+    <header>
+        <!-- Sidebar navigation -->
+        <div id="sidebar" class="sidebar">
+            <button class="close-btn" onclick="toggleSidebar()">×</button>
+            <a href="#drawings">Drawings</a>
+            <a href="#pictures">Pictures</a>
+            <a href="#videos">Videos</a>
+            <a href="#calculations">Calculations</a>
         </div>
-    </section>
 
-    <!-- ... (rest of your content) ... -->
+        <!-- Hamburger Menu -->
+        <div class="hamburger-menu">
+            <button class="hamburger" onclick="toggleSidebar()">☰</button>
+        </div>
 
-    <!-- Link to your JavaScript file -->
+        <div class="header-content">
+            <a href="#home" class="logo-button">Agto Vrgs</a> <!-- This will act as both the logo and a link to the top of the page -->
+            <nav class="navigation-menu">
+                <button onclick="window.location.href='#bi-kon';" class="nav-button">BI-KON</button>
+                <button onclick="window.location.href='#i3net';" class="nav-button">I3NET</button>
+                <button onclick="window.location.href='#amora';" class="nav-button">AMORA</button>
+                <button onclick="window.location.href='#thermochill';" class="nav-button">THERMOCHILL</button>
+                <button onclick="window.location.href='#lincoln';" class="nav-button">LINCOLN ELECTRIC</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="projects-container">
+        <!-- Project bi-kon -->
+        <section class="project" id="bi-kon" style="background-image: url('images/m1.webp');">
+            <div class="project-info">
+                <h2>CAD Specialist Engineer - BI-KON</h2>
+                <p>Standardized engineering documents for manufacturing plastic valves with expertise in SolidWorks and PDM.</p>
+                <a href="bi-kon-project.html" class="btn">Learn More</a>
+            </div>
+        </section>
+        <!-- Project i3net -->
+        <section class="project" id="i3net" style="background-image: url('images/20230605_232036.jpg');">
+            <div class="project-info">
+                <h2>Interactive Books for "La Gobernación del Valle"</h2>
+                <p>Managed technical resources and coded for primary and secondary education books with audio-enabled pens.</p>
+                <a href="i3net-project.html" class="btn">Learn More</a>
+            </div>
+        </section>
+        <!-- Project amora -->
+        <section class="project" id="amora" style="background-image: url('images/IMG_20210322_160855.jpg');">
+            <div class="project-info">
+                <h2>Candle Machine Design & Construction</h2>
+                <p>Developed a machine processing 20 kg of wax per batch, creating candles with innovative features for cost and time efficiency.</p>
+                <a href="amora-project.html" class="btn">Learn More</a>
+            </div>
+        </section>
+        <!-- Project Thermochill -->
+        <section class="project" id="thermochill" style="background-image: url('images/thermochill.jpeg');">
+            <div class="project-info">
+                <h2>CAD Drafter - THERMOCHILL</h2>
+                <p>Designed and modeled an Electrical Power Center for oil rigs, overseeing the project from concept to manufacturing drawings.</p>
+                <a href="thermochill-project.html" class="btn">Learn More</a>
+            </div>
+        </section>
+        <!-- Project Lincoln -->
+        <section class="project" id="lincoln" style="background-image: url('images/20170910_123924.jpg');">
+            <div class="project-info">
+                <h2>Mechanical Engineer Intern - LINCOLN ELECTRIC</h2>
+                <p>Improved manufacturing processes, wrote maintenance manuals, and participated in international training.</p>
+                <a href="Lincoln-project.html" class="btn">Learn More</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Augusto Vargas. All rights reserved.</p>
+    </footer>
+
     <script src="scripts.js"></script>
 </body>
 </html>

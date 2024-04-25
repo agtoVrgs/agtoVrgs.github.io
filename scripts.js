@@ -1,5 +1,8 @@
-// Add your JavaScript code here
-document.addEventListener('DOMContentLoaded', function() {
-    // DOM is fully loaded, but maybe waiting on images & stylesheets
-    console.log("Welcome to my portfolio site!");
-});
+function toggleSidebar() {
+    var sidebar = document.getElementById("sidebar");
+    if (sidebar.style.width === "250px") {
+        sidebar.style.width = "0";
+    } else {
+        sidebar.style.width = "250px";
+    }
+}

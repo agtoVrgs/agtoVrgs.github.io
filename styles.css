@@ -1,136 +1,175 @@
-/* ... (existing styles) ... */
-
-/* Navigation Menu Styles */
-nav ul {
-    list-style: none;
-    background-color: #333;
-    text-align: center;
-    padding: 0;
+/* Sidebar styles */
+.sidebar {
+	height: 100%; /* Full-screen height */
+	width: 0; /* Initially hidden */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Stay on top */
+	top: 0;
+	right: 0; /* Slide from the right */
+	background-color: #111; /* Sidebar background */
+	overflow-x: hidden; /* Disable horizontal scroll */
+	transition: 0.5s; /* Smooth transition effect */
+	padding-top: 60px; /* Spacing from the top */
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 10px;
+	/* Sidebar links */
+	.sidebar a {
+		padding: 10px 15px;
+		text-decoration: none;
+		font-size: 25px;
+		color: #818181;
+		display: block; /* Arrange links in a column */
+		transition: 0.3s;
+	}
+
+		.sidebar a:hover {
+			color: #f1f1f1;
+		}
+
+/* Close button */
+.close-btn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+	border: none;
+	background: none;
+	color: #818181;
+	cursor: pointer;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    padding: 5px 20px;
-    display: inline-block;
+/* Style for the hamburger menu button */
+.hamburger-menu {
+	position: absolute;
+	top: 15px;
+	right: 35px;
+	z-index: 2;
+	cursor: pointer;
 }
 
-nav ul li a:hover {
-    background-color: #555;
+.hamburger {
+	font-size: 30px;
+	background: none;
+	border: none;
+	color: white;
+}
+body, html {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #2a2a2a; /* Light dark background */
+	color: #f0f0f0; /* Light text for better visibility on dark background */
 }
 
-/* Image Gallery Styles */
-.image-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
+header .header-content h1 {
+	color: #f0f0f0; /* Ensures the title 'Agto Vrgs' is visible against the dark background */
+	text-align: center;
 }
 
-.image-gallery img {
-    max-width: 100%;
-    height: auto;
-    border: 1px solid #ccc;
-    margin-bottom: 10px;
+.projects-container {
+	width: 100%;
+	overflow-x: hidden;
 }
 
-/* ... (any additional styles) ... */
-
-/* Basic Layout Structure */
-header, nav, footer {
-    padding: 1em 0;
+.project {
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 }
 
-nav {
-    /* Navigation bar layout */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.project-info {
+	background: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	padding: 20px;
 }
 
-/* Styling for main content sections */
-main {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Adjust number of columns as needed */
-    gap: 20px;
-    padding: 20px;
+.btn {
+	display: inline-block;
+	text-decoration: none;
+	background-color: #222;
+	color: white;
+	padding: 10px 20px;
+	margin-top: 20px;
+	border: none;
+	cursor: pointer;
 }
 
-/* Example section within main */
-.section {
-    background: #1c1c1c; /* Darker background for content sections */
-    padding: 20px;
-    border-radius: 5px;
+	.btn:hover {
+		background-color: #444;
+	}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+	.navigation-menu {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.btn {
+		padding: 8px 16px;
+		font-size: 12px;
+	}
 }
 
-/* Scale images within the gallery */
-.image-gallery img {
-    max-width: 100%; /* This makes sure images are not larger than their container */
-    height: auto; /* This keeps the aspect ratio intact */
-    display: block; /* This takes the images out of inline flow and allows margin to be applied properly */
-    margin: 0 auto; /* This centers the images in their container */
+.logo-button {
+	background: none;
+	border: none;
+	color: white;
+	text-decoration: none; /* Remove underlining from link */
+	font-size: 1.5em; /* Adjust size as needed */
+	cursor: pointer; /* Keeps the pointer cursor to indicate it's clickable */
+	padding: 10px 20px;
 }
 
-/* Dark theme colors */
-body {
-    background-color: #121212; /* Dark background */
-    color: #ffffff; /* Light text */
-    font-family: 'Arial', sans-serif; /* Choose a font */
+	.logo-button:hover {
+		color: #ccc; /* Change color on hover to indicate interactivity */
+		text-decoration: none; /* Ensures no underline appears on hover */
+	}
+
+.header-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #1a1a1a; /* Dark background for better contrast */
+	padding: 10px 20px;
+	z-index: 10;
+	width: 100%;
 }
 
-/* You can add your SVG or an image URL for the gear worm pattern */
-body {
-    background-image: url('images\gear-worm-background.svg');
-    background-repeat: repeat; /* This will tile your background image */
+	.logo-button, .nav-button {
+	background: transparent;
+	border: none;
+	color: white;
+	padding: 10px 20px;
+	cursor: pointer;
+	font-size: 1em;
+	text-transform: uppercase; /* Style preference */
 }
 
-/* Style the rest of the site elements with dark theme colors */
-nav ul {
-    background-color: #1a1a1a; /* Slightly lighter than body for contrast */
+	.logo-button:hover,
+	.nav-button:hover {
+		color: #ccc; /* Lightens the color on hover for a subtle effect */
+		text-decoration: none;
+	}
+
+.navigation-menu {
+	display: flex;
+	gap: 10px; /* Adds space between buttons */
+	align-items: center; /* Vertically centers the buttons in the nav */
+	/* You may remove this padding if it's causing misalignment */
 }
 
-nav ul li a {
-    color: #ddd; /* Lighter text for the navigation */
+/* Add media query for responsive navigation */
+@media (max-width: 768px) {
+	.navigation-menu {
+		flex-direction: column;
+		align-items: center;
+	}
 }
-
-nav ul li a:hover {
-    background-color: #333; /* Hover effect for navigation items */
-}
-
-/* Ensure other text is legible on the dark background */
-h1, h2, p, li {
-    color: #ffffff;
-}
-
-/* Basic Layout Structure */
-header, nav, footer {
-    padding: 1em 0;
-}
-
-nav {
-    /* Navigation bar layout */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Styling for main content sections */
-main {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Adjust number of columns as needed */
-    gap: 20px;
-    padding: 20px;
-}
-
-/* Example section within main */
-.section {
-    background: #1c1c1c; /* Darker background for content sections */
-    padding: 20px;
-    border-radius: 5px;
-}
-
