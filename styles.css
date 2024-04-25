@@ -172,4 +172,44 @@ header .header-content h1 {
 		flex-direction: column;
 		align-items: center;
 	}
+	/* Hide project navigation buttons on mobile */
+	.nav-button {
+		display: none;
+	}
+	/* Ensure that sidebar links for projects are visible */
+	#sidebar a {
+		display: block; /* This might be default, but including it for clarity */
+	}
+	/* Hide the project buttons in the navigation menu */
+	.navigation-menu .nav-button {
+		display: none;
+	}
+
+	/* Style the logo-button to remain visible */
+	.logo-button {
+		display: block; /* Ensure the logo button is always visible */
+		font-size: 1.2em; /* Adjust the font size if necessary */
+		padding: 15px; /* Add padding for tap targets on mobile */
+	}
+
+	/* Style for mobile view sidebar project links */
+	#sidebar .project-link {
+		display: block; /* Ensure the project links are shown in the sidebar */
+		font-size: 1em; /* Adjust font size for mobile */
+	}
 }
+/* If there's a close button for the sidebar, you may want to ensure it is properly positioned */
+.close-btn {
+	/* Styles for close button... */
+}
+/* Default state of sidebar is hidden */
+#sidebar {
+	width: 0;
+	/* ...other styles... */
+}
+
+	/* When active, the sidebar expands */
+	#sidebar.active {
+		width: 250px; /* Same as your JS function */
+		/* ...other styles... */
+	}
