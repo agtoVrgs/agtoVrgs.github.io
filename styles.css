@@ -213,3 +213,14 @@ header .header-content h1 {
 		width: 250px; /* Same as your JS function */
 		/* ...other styles... */
 	}
+
+.video-container {
+    display: flex;
+    flex-direction: column; /* Stack videos vertically */
+    align-items: center; /* Center align videos */
+    margin-top: 20px; /* Space above videos */
+}
+
+.video-container iframe {
+    margin-bottom: 20px; /* Space between videos */
+}
